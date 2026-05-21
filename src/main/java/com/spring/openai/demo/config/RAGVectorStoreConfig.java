@@ -70,9 +70,9 @@ public class RAGVectorStoreConfig {
 
             List<Document> splitDocuments = textSplitter.apply(documents);
 
-            /* This section below need OpenAi API Key !!!*/
-                vectorStore.add(splitDocuments);
-                vectorStore.save(vectorStoreOutputFile);
+            /* Uncomment This section below :: need OpenAi API Key !!!*/
+              //  vectorStore.add(splitDocuments);
+              //  vectorStore.save(vectorStoreOutputFile);
 
         }
 
